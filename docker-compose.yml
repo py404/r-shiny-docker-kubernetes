@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  shinyapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phani_test_shinyapp1
+    image: phani_test_shinyapp1
+    command: ["R", "-e", "shiny::runApp('/app', host = '0.0.0.0', port = 3838)"]
+    ports:
+      - 3838:3838
+    restart: unless-stopped
