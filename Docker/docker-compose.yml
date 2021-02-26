@@ -6,7 +6,6 @@ services:
       dockerfile: ./Docker/shiny/shiny.Dockerfile
     container_name: test_shinyapp1
     image: test_shinyapp1
-    command: ["R", "-e", "shiny::runApp('/app', host = '0.0.0.0', port = 3838)"]
     expose:
       - 3838
     restart: unless-stopped

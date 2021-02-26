@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shiny Server</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center text-white" style="background-color: #3475b4">
+        <h1>Welcome to <strong> Shiny Dashboard Server</strong></h1>
+        <p>Sample dashboards published to the server are listed below.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <iframe src="/hello/" class="card-img-top" alt="..."
+                        style="border: 1px solid #AAA; width: auto; height: 460px"></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Hello app</h5>
+                        <p class="card-text">
+                            A simple bins app in Shiny.
+                        </p>
+                        <a href="/hello/" class="btn btn-primary">View app</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <iframe src="/app/" class="card-img-top" alt="..."
+                        style="border: 1px solid #AAA; width: auto; height: 460px"></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Phani's test shinydashboard</h5>
+                        <p class="card-text">
+                            A simple bins app in ShinyDashboard.
+                        </p>
+                        <a href="/app/" class="btn btn-primary">View app</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
