@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testshinyapp-deployment
+  labels:
+    app: testshinyapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testshinyapp
+  template:
+    metadata:
+      labels:
+        app: testshinyapp
+    spec:
+      containers:
+      - name: testshinyapp
+        image: phaniatmakur/testshinyapp
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "0.5"
+          limits:
+            memory: "1Gi"
+            cpu: "0.5"
+        ports:
+        - containerPort: 3838
