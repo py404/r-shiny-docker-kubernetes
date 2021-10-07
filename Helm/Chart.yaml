@@ -1,0 +1,6 @@
+apiVersion: v2
+name: testshinyapp
+description: A Helm chart to install sample shiny server
+type: application
+version: 0.1.0
+appVersion: 4.1.1 # R version
