@@ -46,4 +46,4 @@ RUN sudo chown -R shiny:shiny /srv/shiny-server
 EXPOSE 3838
 
 # run shiny server shell script
-CMD ["/usr/bin/shiny-server.sh"]
+CMD ["shiny-server"]
