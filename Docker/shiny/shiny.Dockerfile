@@ -23,9 +23,6 @@ RUN apt-get update && \
 ## app folder
 COPY ./app /srv/shiny-server/app/
 
-## shiny-server.sh
-COPY ./Docker/shiny/shiny-server.sh /usr/bin/shiny-server.sh
-
 # replace default index.html
 RUN mv /srv/shiny-server/index.html /srv/shiny-server/index.html.original
 RUN cp -r /srv/shiny-server/sample-apps/hello/ /srv/shiny-server/hello/
